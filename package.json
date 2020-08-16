@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "add-time",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Add time to a date.",
+	"repository": "https://github.com/Richienb/add-time.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,11 +17,17 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"date",
+		"time",
+		"add",
+		"math"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.10.1",
 		"eslint-config-richienb": "^0.4.2",
+		"num-diff": "^1.0.1",
 		"xo": "^0.33.0"
 	},
 	"xo": {

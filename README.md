@@ -1,41 +1,126 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# add-time [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/add-time/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/add-time)
 
-My awesome module.
+Add time to a date.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/add-time.png)](https://npmjs.com/package/add-time)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install add-time
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const addTime = require("add-time");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+addTime(date, {
+	seconds: 10,
+	minutes: 60
+})
+//=> 2020-08-17T00:28:11.523Z
+
+addTime.now({
+	days: 12,
+	months: 8
+});
+//=> 2021-04-28T23:26:53.801Z
 ```
 
 ## API
 
-### theModule(input, options?)
+### addTime(date, options?)
 
-#### input
+Add time to a date.
 
-Type: `string`
+### addTime.now(options?)
 
-Lorem ipsum.
+Add time to the current date.
+
+#### date
+
+Type: `Date | number | string`
+
+The date to add to.
 
 #### options
 
 Type: `object`
 
-##### postfix
+##### milliseconds
 
-Type: `string`\
-Default: `rainbows`
+Type: `integer`\
+Default: `0`
 
-Lorem ipsum.
+The amount of milliseconds to add.
+
+##### seconds
+
+Type: `integer`\
+Default: `0`
+
+The amount of seconds to add.
+
+##### minutes
+
+Type: `integer`\
+Default: `0`
+
+The amount of minutes to add.
+
+##### hours
+
+Type: `integer`\
+Default: `0`
+
+The amount of hours to add.
+
+##### days
+
+Type: `integer`\
+Default: `0`
+
+The amount of days to add.
+
+##### weeks
+
+Type: `integer`\
+Default: `0`
+
+The amount of weeks to add.
+
+##### fortnights
+
+Type: `integer`\
+Default: `0`
+
+The amount of fortnights to add.
+
+##### years
+
+Type: `integer`\
+Default: `0`
+
+The amount of years to add.
+
+##### decades
+
+Type: `integer`\
+Default: `0`
+
+The amount of decades to add.
+
+##### centuries
+
+Type: `integer`\
+Default: `0`
+
+The amount of centuries to add.
+
+##### millennia
+
+Type: `integer`\
+Default: `0`
+
+The amount of millennia to add.
